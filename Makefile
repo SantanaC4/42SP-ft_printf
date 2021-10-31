@@ -6,7 +6,7 @@
 #    By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/17 20:26:21 by edrodrig          #+#    #+#              #
-#    Updated: 2021/10/29 19:35:56 by edrodrig         ###   ########.fr        #
+#    Updated: 2021/10/31 00:39:47 by edrodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 LIBFT 	= ./libft/libft.a
@@ -14,8 +14,10 @@ LIBFT 	= ./libft/libft.a
 NAME	= libftprintf.a
 
 SRCS = ft_printf.c \
-#	ft_printf_utils.c \
-	ft_resolve_dec.c \
+		ft_putnbr_base_ptr.c \
+		ft_putnbr_base.c \
+		ft_putnbr_base_lu.c
+#	ft_resolve_dec.c \
 	ft_resolve_str.c \
 	ft_resolve_ptr.c \
 	ft_resolve_chr.c \

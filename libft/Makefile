@@ -6,7 +6,7 @@
 #    By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/17 20:26:21 by edrodrig          #+#    #+#              #
-#    Updated: 2021/10/29 19:35:28 by edrodrig         ###   ########.fr        #
+#    Updated: 2021/10/30 21:50:59 by edrodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,7 +50,7 @@ FILES = ft_isalpha.c 	\
 		ft_putstr_fd.c		\
 		ft_strmapi.c		\
 		ft_putendl_fd.c		\
-		ft_putnbr_fd.c
+		ft_putnbr_fd.c		\
 
 BONUS =		ft_lstnew.c   		\
 		ft_lstadd_front.c	\
