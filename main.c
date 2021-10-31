@@ -1,15 +1,15 @@
-#include <stdio.h>
 #include "ft_printf.h"
+#include <stdio.h>
 
 int main()
 {
 	int a;
 	int b;
+	char *x = "sdfs";
 
-
-	a = ft_printf("asdi%cfasdfa%c%c%c \n",'a','c','b','g');
+	a = ft_printf("%p\n", (void*)0);
 	printf("%d\n", a);
-	b = printf("asdi%cfasdfa%c%c%c \n",'a','c','b','g');
+	b = printf("%p\n", (void*)0);
 	printf("%d\n", b);
 
 	return 0;

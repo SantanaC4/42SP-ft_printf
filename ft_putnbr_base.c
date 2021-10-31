@@ -6,16 +6,16 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/30 22:05:07 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/10/31 01:33:31 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/10/31 02:14:54 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int		ft_putchar(int nbr, char *base)
+static int	ft_putchar(int nbr, char *base)
 {
-	static int count;
-	int aux;
+	int			aux;
+	static int	count;
 
 	if (*base == 'x')
 	{
@@ -25,20 +25,21 @@ static int		ft_putchar(int nbr, char *base)
 	}
 	if (*base == '-')
 	{
-		write(1,&(*base),1);
+		write(1, &(*base), 1);
 		return (count++);
 	}
 	nbr = *(base + nbr);
 	write(1, &nbr, 1);
 	return (count++);
 }
+
 static void	ft_putnbr(int nbr, size_t base_len, char *base)
 {
 	unsigned int	n;
 
 	if (nbr < 0)
 	{
-		ft_putchar(0,"-");
+		ft_putchar(0, "-");
 		n = nbr * (-1);
 	}
 	else
@@ -52,7 +53,8 @@ static void	ft_putnbr(int nbr, size_t base_len, char *base)
 		ft_putnbr(n / base_len, base_len, base);
 	ft_putnbr(n % base_len, base_len, base);
 }
-int		ft_putnbr_base(int nbr, char *base)
+
+int	ft_putnbr_base(int nbr, char *base)
 {
 	ft_putnbr(nbr, ft_strlen(base), base);
 	return (ft_putchar(0, "x"));
