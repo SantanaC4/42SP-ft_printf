@@ -6,7 +6,7 @@
 #    By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/17 20:26:21 by edrodrig          #+#    #+#              #
-#    Updated: 2021/10/31 03:40:10 by edrodrig         ###   ########.fr        #
+#    Updated: 2021/11/11 00:02:13 by edrodrig         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 LIBFT 	= ./libft/libft.a
@@ -43,7 +43,6 @@ clean:
 fclean: clean
 	@$(MAKE) fclean -C ./libft
 	@rm -f ${NAME}
-	@rm a.out
 
 re: fclean all
 
@@ -53,5 +52,6 @@ test: all
 	${CC} -g main.c libftprintf.a libft/libft.a
 	./a.out
 	@make fclean
+	@rm a.out
 
 .PHONY: all, bonus, clean, fclean, re
