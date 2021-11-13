@@ -6,7 +6,7 @@
 /*   By: edrodrig <edrodrig@student.42sp.org.b      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 21:30:06 by edrodrig          #+#    #+#             */
-/*   Updated: 2021/10/31 04:45:18 by edrodrig         ###   ########.fr       */
+/*   Updated: 2021/11/12 22:17:55 by edrodrig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdio.h>
 
 typedef struct s_list
 {
